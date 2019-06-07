@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="css/styleLOTR.css">
   </head>
 
-  <body lang="nl">
+<!-- Eigen Component Toegevoegd -->
+<div class="container-fluid text-center alert alert-danger alert-dismissible fade show p-3" role="alert">
+  Welkom op een site die gaat over Lord of The Rings.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
     <!-- navigatie -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">LOTR</a>
@@ -395,7 +401,7 @@
       $('#verhaal article').matchHeight();
       $('.card').matchHeight();
     });
-
+    $('.alert').alert()
     </script>
   </body>
 </html>
